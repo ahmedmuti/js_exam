@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS EXAM</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	
+	<section>
+
+<!-- strip navbar -->
+<div class="strip-header-nav">
+	
+	<div class="strip-logo">
+		<img src="images/logo.png">
+	</div>
+	<div class="strip-toggel-menu">
+		<i class="fa fa-align-justify"></i>
+	</div>
+
+	<div class="strip-social-icon">
+		<div class="strip-lang">
+			<span>
+				<i class="fas fa-globe"></i>
+			</span>
+		</div>
+		<!-- <div class="strip-search">
+			<span>
+				<i class="fas fa-search"></i>
+			</span>
+		</div> -->
+		<div class="strip-share">
+			<span>
+				<i class="fas fa-share-alt"></i>
+			</span>
+		</div>
+	</div>
+
+</div>
+
+<div class="nav-tab-menu">
+	<div class="nav-item">
+		<ul>
+			<li class="item1"><a class="nav-category" href="#">Now playing</a></li>
+			<li class="item2"><a class="nav-category" href="#">Popular</a></li>
+			<li class="item3"><a class="nav-category" href="#">Top Rated</a></li>
+	
+			<li class="item5"><a class="nav-category" href="#">Trending</a></li>
+			<li class="item6"><a class="nav-category" href="#">Upcoming</a></li>
+			<li class="item6"><a class="nav-category" href="#contact">Contact Us</a></li>
+
+	
+		</ul>
+	</div>
+	<div class="nav-social-item">
+		<a href="#"><i class="fab fa-facebook-f"></i></a>
+		<a href="#"><i class="fab fa-twitter"></i></a>
+		<a href="#"><i class="fas fa-globe"></i></a>
+		<div class="pt-3">
+			<span>Copyright © 2019 All Rights Reserved.</span>
+		</div>
+		
+	</div>
+</div>
+<!-- 
+<div class="search">
+	<input type="text"  placeholder="Type & Hit Enter" name="" class="search-input">
+</div> -->
+<!-- /strip navbar -->
+<!-- slider -->
+	
+
+
+</section>
+-->
+<!-- /slider -->
+<section class="pt-5">
+	<div class="container w-75 myM">
+	<div class="row">
+		   <div class="col-md-6"><input id="allMovies" class="form-control mb-5 " placeholder="get movies by word...">
+		   </div>
+		   <div class="col-md-6"><input class="form-control " id="word" placeholder="search...">
+		   </div>
+    
+	</div>
+</div>
+	<section class="container text-center  ">
+				
+		<div class="row" id="res">
+		  
+		
+		</div>
+	
+	
+	</section>
+	  
+			  <section class="container text-center my-1 py-2 ">
+				
+			<div class="row" id="rowData">
+			  
+			
+			</div>
+		
+		
+		</section>
+
+
+</section>
+
+
+
+
+<section id="contact" class="container myM w-75 mx-auto my-5 ">  
+	<h2 class="text-light my-5">ContacUs...</h2>
+	<div class="row">
+	  <div class="col-md-6">
+	<div class="form-group">
+	  <input class="form-control" id="name" placeholder="Enter Your Name">
+		<div class="alert alert-danger" id="namealert" role="alert">
+		  Your Name is not valid
+		</div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input class="form-control" id="email" placeholder="Enter Email">
+	  <div class="alert alert-danger" id="emailalert" role="alert">
+		entre valid email
+	  </div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input  class="form-control" id="phone" placeholder="Enter phone">
+	  <div class="alert alert-danger" id="phonealert" role="alert">
+		entre valid phone
+	  </div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input  class="form-control" id="age" placeholder="Enter Age">
+	  <div class="alert alert-danger" id="agealert" role="alert">
+		entre valid Age
+	  </div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input  class="form-control" type="password"  id="password" placeholder="Enter Password">
+	  <div class="alert alert-danger" id="passwordalert" role="alert">
+		entre valid password *Minimum eight characters, at least one letter and one number:*
+	  </div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input  class="form-control" type="password"  id="rePassword" placeholder="Enter RePassword">
+	  <div class="alert alert-danger" id="repasswordalert" role="alert">
+		entre valid Repassword
+	  </div>
+	</div>
+  </div>
+
+
+  </div>  
+	
+	<button type="submit" disabled id="submitBtn" class="btn btn-outline-danger">Submit</button>
+
+  </section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+ <!-- <script src="js/mine.min.js"></script> -->
+ <script src="js/main.js"></script>
+
+</body>
+</html>
