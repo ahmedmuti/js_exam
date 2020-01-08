@@ -8,9 +8,11 @@
 	font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
 .testMerit
 {
-	color: crimson;
+	color: crimson !important;
+	background-color: aqua !important;
 }
 body{
 	background-color: #001;
